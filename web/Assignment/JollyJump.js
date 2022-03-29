@@ -33,6 +33,32 @@ for (let i = 0; i < (b.length)-1; i++) {
     temp=b[i]-b[i+1];
     temp = Math.abs(temp);
     console.log("Diff = ",temp);
+    diff[i] = temp;
 }
+diff.sort();
 
+console.log("This is difference Array = ");
+for (let i = 0; i < diff.length; i++) {
+    console.log("d = ",diff[i]);  
+}
+console.log("Diff of diff");
+console.log(" Array = ");
+let dif2 = diff[0]-diff[1];
 
+dif2 = Math.abs(dif2);
+let result = true;
+console.log("1st diff of diff = ", dif2);
+for (let i = 0; i < (diff.length)-1; i++) {
+   let dif1 = diff[i]-diff[i+1]
+  if(dif1!=dif2){
+    result = false;
+    break;
+  } 
+}
+if(result){
+    console.log("Jolly");
+}
+else
+{
+    console.log("Not jolly");
+}
