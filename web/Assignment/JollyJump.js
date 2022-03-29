@@ -14,7 +14,7 @@
 
 console.log("This is a new array");
 
-let a = [-11,2,3,-5];
+let a = [1,2,4,7];
 let b = [];
 let diff = [];
 // for (let i = 0; i < a.length; i++) {
@@ -49,7 +49,8 @@ dif2 = Math.abs(dif2);
 let result = true;
 console.log("1st diff of diff = ", dif2);
 for (let i = 0; i < (diff.length)-1; i++) {
-   let dif1 = diff[i]-diff[i+1]
+   let dif1 = diff[i]-diff[i+1];
+   dif1 = Math.abs(dif1);
   if(dif1!=dif2){
     result = false;
     break;
