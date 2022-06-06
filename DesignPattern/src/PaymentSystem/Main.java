@@ -4,14 +4,21 @@ public class Main {
         API bkash = new API();
         Database database = new Database();
         SignIn signIn = new SignIn();
-        User user = new User("Saju",121,500);
-        User user1 = new User("Raju",122,1000);
-        User user2 = new User("kaju",133,200);
+        NewSignIn newSignIn = new NewSignIn();
+        User user = new User("Saju",121);
+        User user1 = new User("Raju",122);
+        User user2 = new User("Kaju",133);
         bkash.pay(user);
         bkash.pay(user1);
         bkash.pay(user2);
         System.out.println("---------------The DataBase is -----------");
         database.showDatabase();
-        signIn.signIn(user1);
+      //  signIn.signIn(user1);
+        newSignIn.signIn();
+        newSignIn.signIn();
+        newSignIn.signIn();
+        newSignIn.signIn();
+
+
     }
 }

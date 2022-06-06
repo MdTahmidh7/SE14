@@ -4,14 +4,6 @@ import java.util.ArrayList;
 
 public class Database {
     public static ArrayList<User> users = new ArrayList<>();
-    ArrayList<String> nameList = new ArrayList<>();
-
-    public void apiToDatabaseConnection(User user){
-        System.out.println("Adding user to the database");
-        System.out.println("Name = "+user.name);
-        users.add(user);
-        nameList.add(user.name);
-    }
     public void showDatabase(){
         for (User u:users) {
             System.out.println("Name = "+u.name+" Id = "+u.id+" Amount = "+u.amount+" Tid = "+u.tid);
@@ -23,6 +15,22 @@ public class Database {
         }
         else{
             System.out.println(" Error ");
+        }
+    }
+    public void checkSignIn(String name,String tid){
+        boolean validUser = false;
+        for (User u:users) {
+            // break;
+            validUser = u.name.equals(name) && u.tid.equals(tid);
+            if (validUser){
+                break;
+            }
+        }
+        if (validUser){
+            System.out.println("---------->Access Granted");
+        }else
+        {
+            System.out.println("----------->Access Denied");
         }
     }
 
