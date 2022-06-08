@@ -1,4 +1,4 @@
-package ClassPractice.Practice1;
+package PrototypeDP.Practice1;
 
 import java.util.ArrayList;
 
