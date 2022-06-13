@@ -3,8 +3,8 @@ package PrototypeDP.Practice1;
 import java.util.ArrayList;
 
 public class Shop implements CloneShop{
-    ArrayList<Item> arrayList = new ArrayList<Item>();
-    private ArrayList<String> items;
+   // ArrayList<Item> arrayList = new ArrayList<Item>();
+    public ArrayList<String> items;
     public void add(String s){
         if (items == null){
             items = new ArrayList<>();
@@ -75,7 +75,7 @@ public class Shop implements CloneShop{
         shop.items = this.items;
 //        for (String item:items
 //        ) {
-//            shop.add(item);
+//            shop.items.add(item);
 //        }
         return shop;
     }
