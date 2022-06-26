@@ -31,7 +31,7 @@ class ABC{
             synchronized (ABC.class){
                 if (obj==null){
                     obj = new ABC();
-                }
+               }
             }
 
         }

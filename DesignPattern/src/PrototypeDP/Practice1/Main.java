@@ -1,6 +1,12 @@
 package PrototypeDP.Practice1;
 
 public class Main {
+    String s = "This is a Sting";
+    char c = 'p';
+    int i = 10;
+    float f = 10.2f;
+    double d = 100.1234;
+
 
     public static void main(String[] args) {
 
@@ -17,5 +23,8 @@ public class Main {
         System.out.println(shop1+ " \n "+shop2);
         System.out.println();
         System.out.println(shop1.items+ " \n "+shop2.items);
+
+
+
     }
 }

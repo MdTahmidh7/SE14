@@ -72,7 +72,7 @@ public class Shop implements CloneShop{
     }
     public Shop clone(){
         Shop shop = new Shop(this.ID,this.number,this.floor);
-        shop.items = this.items;
+        //shop.items = this.items;
 //        for (String item:items
 //        ) {
 //            shop.items.add(item);

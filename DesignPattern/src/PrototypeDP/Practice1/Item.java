@@ -1,7 +1,5 @@
 package PrototypeDP.Practice1;
 
-import java.util.ArrayList;
-
 public class Item implements CloneShop{
     String itemName;
   //  int numberOfItem;
