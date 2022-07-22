@@ -5,7 +5,7 @@ public class Remote {
     public Remote(Command command){
         this.command = command;
     }
-    public void press(){
+    public void press() {
         this.command.execute();
     }
 }

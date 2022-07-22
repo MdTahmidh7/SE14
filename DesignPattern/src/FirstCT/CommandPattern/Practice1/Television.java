@@ -13,7 +13,6 @@ public class Television implements ElectronicDevice{
     }
 
     public void volumeUpp() {
-
         volume++;
         System.out.println("Volume is = "+volume);
     }
