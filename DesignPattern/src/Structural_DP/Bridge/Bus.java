@@ -1,7 +1,7 @@
-package Structural_DP.Adapter.Bridge_DP;
+package Structural_DP.Bridge;
 
-public class Bus extends AutoMobile{
-    public Bus(WorkShop produceWorkShop,WorkShop assembleWorkShop) {
+public class Bus extends AutoMobile {
+    public Bus(WorkShop produceWorkShop, WorkShop assembleWorkShop) {
         super( produceWorkShop,assembleWorkShop);
     }
     @Override

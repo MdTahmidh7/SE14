@@ -1,4 +1,4 @@
-package Structural_DP.Adapter.Bridge_DP;
+package Structural_DP.Bridge;
 
 public abstract class WorkShop {
     public abstract void work();

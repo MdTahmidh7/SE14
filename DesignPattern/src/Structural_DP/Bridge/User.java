@@ -1,4 +1,4 @@
-package Structural_DP.Adapter.Bridge_DP;
+package Structural_DP.Bridge;
 
 public class User {
     public static void main(String[] args) {

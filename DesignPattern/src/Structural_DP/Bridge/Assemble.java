@@ -1,6 +1,6 @@
-package Structural_DP.Adapter.Bridge_DP;
+package Structural_DP.Bridge;
 
-public class Assemble extends WorkShop{
+public class Assemble extends WorkShop {
     @Override
     public void work() {
         System.out.print(" And Assemble.");
