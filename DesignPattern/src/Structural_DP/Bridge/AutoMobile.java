@@ -8,6 +8,4 @@ public abstract class AutoMobile {
         this.produceWorkShop = produceWorkShop;
     }
     public abstract void manufacture();
-
-
 }

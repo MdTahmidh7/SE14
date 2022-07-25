@@ -1,5 +1,4 @@
 package Structural_DP.Composite;
-
 public class CompositeTest {
     public static void main(String[] args) {
         Component hd = new Leaf("hd", 2500);
@@ -7,7 +6,6 @@ public class CompositeTest {
         Component monitor = new Leaf("monitor", 5000);
         Component ram = new Leaf("ram", 3200);
         Component cpu = new Leaf("cpu", 10500);
-
 
         Composite cabinet = new Composite("cabinet");
         Composite peripheral = new Composite("peripheral");
