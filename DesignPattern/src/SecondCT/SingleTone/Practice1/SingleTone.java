@@ -2,24 +2,22 @@ package SecondCT.SingleTone.Practice1;
 
 public class SingleTone {
     public static void main(String[] args) throws InterruptedException {
-        //ABC abc = ABC.getObj();
-       // ABC abc1 = ABC.getObj();
-//        Thread thread = new Thread(new Runnable() {
-////            @Override
-////            public void run() {
-////                ABC abc = ABC.getObj();
-////            }
-////        });
-////        Thread thread1 = new Thread(new Runnable() {
-////            @Override
-////            public void run() {
-////                ABC abc1 = ABC.getObj();
-////            }
-////        });
-////        thread.start();
-////        thread1.start();
-        ABC abc2 = ABC.getObj();
-        ABC abc3 = ABC.getObj();
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                ABC abc = ABC.getObj();
+            }
+        });
+        Thread thread1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                ABC abc1 = ABC.getObj();
+            }
+        });
+        thread.start();
+        thread1.start();
+//        ABC abc2 = ABC.getObj();
+//        ABC abc3 = ABC.getObj();
     }
 
 }
@@ -35,7 +33,6 @@ class ABC{
                     obj = new ABC();
                }
             }
-
         }
         return obj;
     }

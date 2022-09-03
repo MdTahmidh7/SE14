@@ -12,7 +12,5 @@ public class TestMediatorDP {
 
         runway34.land();
         bowing707.land();
-
-
     }
 }
